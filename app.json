@@ -1,0 +1,74 @@
+{
+  "expo": {
+    "name": "StyleSync",
+    "slug": "stylesync",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "stylesync",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": false,
+    "ios": {
+      "supportsTablet": true,
+      "icon": "./assets/images/icon.png",
+      "bundleIdentifier": "com.testexpinator.StyleSync",
+      "infoPlist": {
+        "NSCameraUsageDescription": "We need access to your camera for the virtual fitting feature",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "jsEngine": "hermes",
+    "experimental": {
+      "newArchitecture": false
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": false,
+      "androidNavigationBar": {
+        "barStyle": "dark-content",
+        "backgroundColor": "green"
+      },
+      "package": "com.testexpinator.StyleSync",
+      "permissions": [
+        "CAMERA"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "resizeMode": "cover",
+          "backgroundColor": "#E39144"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "enablePngCrunchInReleaseBuilds": false
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "506e366e-ba52-4400-a088-424a0c7d014e"
+      }
+    },
+    "owner": "websawan"
+  }
+}
